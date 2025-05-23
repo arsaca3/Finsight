@@ -1,16 +1,20 @@
 # Finsight 📊
 
 **Finsight**, kişisel finanslarınızı kolayca yönetmenizi sağlayan bir Android uygulamasıdır.  
-Gelir-gider takibi yapabilir, varlıklarınızı görebilir, grafiklerle analiz edebilir ve yapay zeka destekli chatbot'tan öneri alabilirsiniz.
+Gelir-gider takibi yapabilir, varlıklarınızı görebilir, grafiklerle analiz edebilir ve akıllı sohbet botuyla doğal dilde etkileşim kurabilir.
 
 ---
 
 ## 🚀 Özellikler
-- 📈 Gelir-Gider takibi
-- 📊 Haftalık, aylık ve yıllık raporlar
-- 🤖 Yapay Zeka destekli sohbet botu
-- 💬 Harcama tavsiyeleri
-- 🔐 Kullanıcıya özel veri filtreleme
+- 📊 **Gelir ve gider takibi:** Manuel veri girişi ve aylık filtreleme
+- 📈 **Grafik raporlar:** Haftalık, aylık ve yıllık analizler
+- 💬 **Yapay zekâ destekli sohbet botu:**
+  - Gelir/gider sorgulama
+  - Gelir ekleme
+  - Tasarruf hesaplama
+  - Bütçe durumu raporlama
+- 🧠 **Makine öğrenmesi modeli:** TensorFlow Lite ile entegre edilmiş niyet sınıflandırıcı (IntentClassifier)
+- 🗂️ SQLite/Room DB tabanlı veri yönetimi
 
 ---
 
