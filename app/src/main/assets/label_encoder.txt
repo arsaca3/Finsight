@@ -1,0 +1,6 @@
+bütçe
+gelirEkle
+gelirSorgu
+giderSorgu
+tasarruf
+yardim

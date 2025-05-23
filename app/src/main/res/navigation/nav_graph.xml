@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/anasayfaFragment">
+
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.example.finsight20.ui.fragment.AnasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" />
+    <fragment
+        android:id="@+id/ayarlarFragment"
+        android:name="com.example.finsight20.ui.fragment.ayarlarFragment"
+        android:label="fragment_ayarlar"
+        tools:layout="@layout/fragment_ayarlar" >
+        <action
+            android:id="@+id/profilAyarGecis"
+            app:destination="@id/profilAyarFragment" />
+        <action
+            android:id="@+id/butcegecis"
+            app:destination="@id/butcelemeFragment" />
+        <action
+            android:id="@+id/chatgecis"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/veriFragment"
+        android:name="com.example.finsight20.ui.fragment.veriFragment"
+        android:label="fragment_veri"
+        tools:layout="@layout/fragment_veri" >
+        <action
+            android:id="@+id/giderGecis"
+            app:destination="@id/giderekleFragment" />
+        <action
+            android:id="@+id/gelirGecis"
+            app:destination="@id/gelirekleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/raporlarFragment"
+        android:name="com.example.finsight20.ui.fragment.RaporlarFragment"
+        android:label="fragment_raporlar"
+        tools:layout="@layout/fragment_raporlar" />
+    <fragment
+        android:id="@+id/gelirekleFragment"
+        android:name="com.example.finsight20.ui.fragment.gelirekleFragment"
+        android:label="fragment_gelirekle"
+        tools:layout="@layout/fragment_gelirekle" />
+    <fragment
+        android:id="@+id/giderekleFragment"
+        android:name="com.example.finsight20.ui.fragment.giderekleFragment"
+        android:label="fragment_giderekle"
+        tools:layout="@layout/fragment_giderekle" />
+    <fragment
+        android:id="@+id/profilAyarFragment"
+        android:name="com.example.finsight20.ui.fragment.profilAyarFragment"
+        android:label="fragment_profil_ayar"
+        tools:layout="@layout/fragment_profil_ayar" />
+    <fragment
+        android:id="@+id/butcelemeFragment"
+        android:name="com.example.finsight20.ui.fragment.ButcelemeFragment"
+        android:label="fragment_butceleme"
+        tools:layout="@layout/fragment_butceleme" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.finsight20.ui.fragment.ChatFragment"
+        android:label="ChatFragment" />
+</navigation>

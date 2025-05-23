@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/anasayfaFragment"
+        android:icon="@drawable/anasayfa_resim"
+        android:title="anasayfa" />
+    <item
+        android:id="@+id/raporlarFragment"
+        android:icon="@drawable/raporlar_resim"
+        android:title="raporlar" />
+    <item
+        android:id="@+id/veriFragment"
+        android:icon="@drawable/veri_resim"
+        android:title="veri" />
+    <item
+        android:id="@+id/ayarlarFragment"
+        android:icon="@drawable/ayarlar_resim"
+        android:title="ayarlar" />
+</menu>

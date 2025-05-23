@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.fragment.RaporlarFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/raporlarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/toggleContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_toggle_outline"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView10">
+
+            <!-- Arka plan kaydırma efekti -->
+            <View
+                android:id="@+id/sliderBackground"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="@drawable/bg_toggle_selected" />
+
+            <!-- Buton grubu -->
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/btnToggleGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:checkedButton="@id/btnGunluk"
+                app:singleSelection="true">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGunluk"
+                    style="@style/ToggleButtonCleanStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Günlük"
+                    android:backgroundTint="@android:color/transparent"
+                    app:rippleColor="@android:color/transparent"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnHaftalik"
+                    style="@style/ToggleButtonCleanStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Haftalık"
+                    android:backgroundTint="@android:color/transparent"
+                    app:rippleColor="@android:color/transparent"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAylik"
+                    style="@style/ToggleButtonCleanStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Aylık"
+                    android:backgroundTint="@android:color/transparent"
+                    app:rippleColor="@android:color/transparent"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnYillik"
+                    style="@style/ToggleButtonCleanStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Yıllık"
+                    android:backgroundTint="@android:color/transparent"
+                    app:rippleColor="@android:color/transparent"/>
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+        </FrameLayout>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="357dp"
+            android:layout_height="277dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="Raporlar"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtSecilenKategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Gider Dağılımınız"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barChart" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="278dp"
+            android:layout_height="268dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtSecilenKategori" />
+
+        <TextView
+            android:id="@+id/txtSecilenKategori3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Gelir Dağılımınız"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pieChart" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChartgelir"
+            android:layout_width="278dp"
+            android:layout_height="268dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtSecilenKategori3" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="200dp"
+            android:backgroundTint="@color/lacivert"
+            android:text="Raporumu paylaş"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pieChartgelir" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Verilerinizi görmek için sütunlara tıklayabilirsiniz"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleContainer" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

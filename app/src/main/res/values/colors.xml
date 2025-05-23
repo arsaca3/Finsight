@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lacivert">#2FD9E6</color>
+    <color name="pozitif_renk">#4DB6AC</color>
+    <color name="negatif_renk">#F06292</color>
+</resources>
