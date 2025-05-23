@@ -16,8 +16,8 @@ Gelir-gider takibi yapabilir, varlıklarınızı görebilir, grafiklerle analiz 
 
 ## 📸 Ekran Görüntüleri
 
-![Anasayfa](screenshots/anasayfa.png)  
-![ChatBot](screenshots/chatbot.png)
+![Anasayfa](screenshots/Screenshot_20250523_132601.png)  
+![ChatBot](screenshots/Screenshot_20250523_132418.png)
 
 ---
 
