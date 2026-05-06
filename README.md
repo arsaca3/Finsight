@@ -35,7 +35,7 @@ Gelir-gider takibi yapabilir, varlıklarınızı görebilir, grafiklerle analiz 
 ---
 
 ## 📌 Sürüm
-**v1.0** – Room veritabanı ile ilk sürüm yayında!
+**v1.0** – Room veritabanı ile ilk sürüm
 
 ---
 
